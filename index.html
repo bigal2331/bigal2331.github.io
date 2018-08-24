@@ -4,8 +4,6 @@
 	<title>Jeiner Noriega</title>
   <link rel="stylesheet" type="text/css" href="./styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
 </head>
 <body>
   
@@ -15,11 +13,12 @@
         <div>
           <div class="navbar-header">
             <div class="nav-menu">
-                <a href="#" id="logo">Jeiner Noriega</a>
+                <span id="logo">Jeiner Noriega</span>
                 <ul>
-                  <li><a href="#about">About</a></li>
+                  
                   <li><a href="#projects">Projects</a></li>
-                  <li><a href="#home">Home</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#about">About</a></li>
                 </ul>
               </div>
           </div>
@@ -27,25 +26,40 @@
         </div>
       </nav>
     </header>
-    <section id="about" class="sec-about">
+    <section id="about">
       
       <div>
-        <h1>Web <span id="dev-text">Developer</span></h1>
+        <h1>Web Developer</h1>
         <hr />
-        <div id="desktop">
+        <!-- <div id="desktop">
             <img class="main-pic" src="./pics/desktop1.jpg" alt="mainpic">
         </div>
         <div id="mobile">
             <img class="main-pic" src="./pics/mobile.jpg" alt="mainpic">
-        </div>
-        
-        
-
-        
+        </div> -->
+        <p>Hi, my name is Jeiner Noriega and I'm a jack of all trades. 
+            In the past, I’ve held roles in Data Analytics, Project Management, and Operations Management.
+            I discovered my love for web development while working as a Project Manager at the nations largest non-profit home healthcare company. 
+            I decided to enroll in a development intensive at New York Code + Design Academy to learn more about development. 
+            Currently, I’m looking for a front-end web development position so I can bring my breadth of experience to bear - creating beautiful intuitive products that the artist in me would be proud of.</p>
+            <div id="contact-container">
+                <div id="contact">
+                    <a href="https://github.com/bigal2331" target="_blank">
+                        <img src="./pics/github-icon.png" alt="github" id="github">
+                    </a>       
+                    <a href="https://www.linkedin.com/in/jeiner-noriega/" target="_blank">
+                        <img src="./pics/linkedin-icon.png" alt="github" id="github">
+                    </a>      
+                    <a href="mailto:jeiner.noriega@gmail.com" target="_blank">
+                        <img src="./pics/mail-icon.png" alt="github" id="github">
+                    </a>               
+                </div>
+            </div>
+            
       </div>
     </section>
 
-    <section id="skills" class="sec-about">
+    <section id="skills">
       
         <div id="skill-container">
           <h1>Technologies</h1>
@@ -87,27 +101,36 @@
       <div>
         <h1>Projects</h1>
         <hr />        
-        <div class="card">  
-          <img src="./pics/onelang.png">           
-          <div class="container">
-              <h2 class="h3">Beautiful Design</h2>            
-              <p>Every website is beautiful, unique and tailored to suit your needs and requirements.</p>
-          </div>                     
-        </div>
-        <div class="card">
-          <img src="./pics/hallow2.png">  
-          <div class="container">
-              <h2 class="h3">Beautiful Design</h2>            
-              <p>Every website is beautiful, unique and tailored to suit your needs and requirements.</p>
-          </div>          
-        </div>
-        <div class="card">  
-          <img src="./pics/btbx.png">           
-          <div class="container">
-              <h2 class="h3">Beautiful Design</h2>            
-              <p>Every website is beautiful, unique and tailored to suit your needs and requirements.</p>
-          </div>                     
-        </div>
+        <a href="http://onelang.herokuapp.com" target="_blank">
+            <div class="card">  
+            <img src="./pics/onelang.png">           
+            <div class="container">
+                <h2 class="h3">Beautiful Design</h2>            
+                <p>OneLang makes it possible for individuals that speak different languages 
+                    to communicate in real-time and share ideas.</p>
+            </div>                     
+            </div>
+        </a>
+        <a href="http://hallowgram.herokuapp.com" target="_blank">
+            <div class="card">
+                <img src="./pics/hallow2.png">  
+                <div class="container">
+                    <h2 class="h3">Beautiful Design</h2>            
+                    <p>An fullstack application created by Jeiner Noriega and Michael Haviv. A Halloween themed Instagram clone application</p>
+                </div>          
+            </div>
+        </a>
+        <a href="https://github.com/bigal2331/jukeBoxPj" target="_blank">
+            <div class="card">  
+                <img src="./pics/btbx.png">           
+                <div class="container">
+                    <h2 class="h3">Beautiful Design</h2>            
+                    <p>BtBx is a front-end application that let's you create playlists of your favorite songs and stream them to your computer.
+                    Using the SoundCloud API you have access to thousands of songs</p>
+                </div>                     
+            </div>
+        </a>        
+
       </div>
     </section>
     
