@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+  color: #0d0a1f;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "start center end";
+}
+
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    grid-column-start: center;
+    background: #f2f5f7;
+    font-size: 18px;
+  }
+  .main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .main-nav ul li {
+    float: right;
+  }
+  .main-nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #a6a9ad;
+    text-align: center;
+    padding: 0.7rem 0.9rem;
+  }
+}
+.hire-me {
+  background: #0d948b;
+  outline: none;
+  border: none;
+  padding: 1.2rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  grid-column-start: end;
+  margin: 0 5rem;
+}
+
+.toggle-button {
+  width: 3rem;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  grid-column-start: start;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.nav-menu li .nav-menu li:hover {
+  background-color: #f8f7fa;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+h1 {
+  color: #7e61ff;
+}
+
+#logo {
+  color: #4e26ff;
+  text-decoration: none;
+  float: left;
+  padding: 14px 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 450px;
+  float: left;
+  margin: 25px;
+}
+
+.card:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.main-pic {
+  height: 450px;
+  width: 500px;
+}
+
+.skill img {
+  float: left;
+  margin: 5px;
+  padding: 0;
+  width: 18%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.skill img:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#skill-container {
+  margin-bottom: 400px;
+}
+
+#contact-container {
+  text-align: center;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+#contact img {
+  width: 50px;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
