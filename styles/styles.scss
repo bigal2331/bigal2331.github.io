@@ -69,6 +69,14 @@ header {
   grid-column-start: end;
   justify-self: end;
 }
+
+.mobile-nav{
+  display: none;
+}
+
+.show-mobile-nav{
+  display: block;
+}
 .toggle-button {
   width: 3rem;
   //   background: transparent;

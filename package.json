@@ -1,0 +1,20 @@
+{
+  "name": "bigal2331.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "cd styles && sass --watch styles.scss:styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigal2331/bigal2331.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigal2331/bigal2331.github.io/issues"
+  },
+  "homepage": "https://github.com/bigal2331/bigal2331.github.io#readme"
+}
