@@ -4,6 +4,7 @@ let mobileNav = document.querySelector('.mobile-nav');
 let expandMenu = () =>{
 
   mobileNav.classList.toggle('show-mobile-nav');
+  toggleButton.classList.toggle('toggle-button__clicked');
 }
 
 
