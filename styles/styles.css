@@ -51,18 +51,21 @@ header {
 .main-nav {
   display: none; }
 
-.hire-me {
-  grid-column-start: end;
-  justify-self: end;
-  cursor: pointer;
+.button-styles, .hire-me, #contact-container a {
   background: #e85454;
-  border: none;
   border-radius: 0.5rem;
   color: #ffffff;
   font-weight: 600;
-  outline: none;
-  margin-right: .5rem;
+  cursor: pointer; }
+
+.hire-me {
+  background: #0d948b;
   text-transform: uppercase;
+  grid-column-start: end;
+  justify-self: end;
+  border: none;
+  outline: none;
+  margin-right: 0.5rem;
   width: 8rem; }
 
 .menu-list__item a, .mobile-nav .mobile-nav__items .mobile-nav__item a, .main-footer .main-footer__items .main-footer__item a {
@@ -122,12 +125,12 @@ h1 {
     width: 100%; }
 
 #contact-container {
-  text-align: center; }
+  text-align: center;
+  margin: 4rem 0; }
   #contact-container a {
-    text-decoration: none; }
-  #contact-container img {
-    margin-left: 25px;
-    border-radius: 10px; }
+    text-decoration: none;
+    margin-left: 3rem;
+    padding: .5rem; }
 
 #projects a {
   color: #646f7d;
@@ -144,6 +147,20 @@ h1 {
       max-height: 25rem;
       border-radius: .5rem;
       width: 100%; }
+    @media (min-width: 40rem) {
+      #projects a .card {
+        display: inline-flex;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+        border-radius: 0; }
+        #projects a .card img {
+          border-radius: 0;
+          width: 50%; }
+        #projects a .card:hover {
+          box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2); } }
+  @media (min-width: 40rem) {
+    #projects a {
+      display: inline-flex; } }
 
 .main-footer {
   background: #373a57; }
@@ -152,7 +169,12 @@ h1 {
     padding: 0;
     margin: 0; }
     .main-footer .main-footer__items .main-footer__item a {
+      padding: .5rem;
       width: 100%; }
+    @media (min-width: 40rem) {
+      .main-footer .main-footer__items .main-footer__item {
+        display: inline-block;
+        padding: 1rem; } }
 
 @media (min-width: 40rem) {
   .toggle-button {
