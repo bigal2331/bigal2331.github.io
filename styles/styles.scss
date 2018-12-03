@@ -252,12 +252,17 @@ h1 {
       border-radius: 0.5rem;
       max-width: 100%;
       max-height: 50%;
-      height: 50%;
+      height: 16rem;
       width: 100%;
+    }
+    .github-links,
+    .github-links a {
+      @extend .contact-links;
+      margin-bottom: 2rem;
     }
     @include media-min-width(40rem) {
       max-width: 18rem;
-      max-height: 35rem;
+      max-height: 37rem;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       &:hover {
         box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
@@ -266,10 +271,16 @@ h1 {
         text-align: left;
       }
     }
+    @include media-min-width(40rem) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
   @include media-min-width(40rem) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 }

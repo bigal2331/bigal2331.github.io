@@ -90,7 +90,7 @@ header .main-nav {
   margin: 0.3rem 0;
 }
 
-.button-styles, .contact-links a, .hire-me {
+.button-styles, .contact-links a, .project-items .project-card .github-links a, .hire-me {
   background: #e85454;
   border-radius: 0.5rem;
   color: #ffffff;
@@ -192,14 +192,14 @@ h1 {
   }
 }
 
-.contact-links a {
+.contact-links a, .project-items .project-card .github-links a {
   border: 1px #e85454 solid;
   text-decoration: none;
   display: inline-block;
   margin: 2rem;
   padding: 0.5rem;
 }
-.contact-links a:hover, .contact-links a:focus {
+.contact-links a:hover, .project-items .project-card .github-links a:hover, .contact-links a:focus, .project-items .project-card .github-links a:focus {
   background: #ffffff;
   color: #e85454;
 }
@@ -241,13 +241,17 @@ h1 {
   border-radius: 0.5rem;
   max-width: 100%;
   max-height: 50%;
-  height: 50%;
+  height: 16rem;
   width: 100%;
+}
+.project-items .project-card .github-links,
+.project-items .project-card .github-links a {
+  margin-bottom: 2rem;
 }
 @media (min-width: 40rem) {
   .project-items .project-card {
     max-width: 18rem;
-    max-height: 35rem;
+    max-height: 37rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   .project-items .project-card:hover {
@@ -258,8 +262,16 @@ h1 {
   }
 }
 @media (min-width: 40rem) {
+  .project-items .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 40rem) {
   .project-items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 }
