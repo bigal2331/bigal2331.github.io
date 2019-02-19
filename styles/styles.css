@@ -56,7 +56,7 @@ header .main-nav {
   header .main-nav ul li a {
     text-decoration: none;
     color: #a6a9ad;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.25rem;
   }
   header .main-nav ul li a:hover, header .main-nav ul li a:focus {
     color: #e85454;
